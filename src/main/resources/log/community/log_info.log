@@ -1,0 +1,7 @@
+2021-06-07 17:04:44,024 INFO [main] c.l.c.LoggerTest [StartupInfoLogger.java:55] Starting LoggerTest using Java 1.8.0_292 on bran with PID 7468 (started by bran in /opt/code/commnity-mvc)
+2021-06-07 17:04:44,040 INFO [main] c.l.c.LoggerTest [SpringApplication.java:663] No active profile set, falling back to default profiles: default
+2021-06-07 17:04:46,852 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-06-07 17:04:47,460 INFO [main] c.l.c.LoggerTest [StartupInfoLogger.java:61] Started LoggerTest in 4.152 seconds (JVM running for 6.7)
+2021-06-07 17:04:47,467 INFO [main] o.s.b.a.ApplicationAvailabilityBean [ApplicationAvailabilityBean.java:75] Application availability state LivenessState changed to CORRECT
+2021-06-07 17:04:47,469 INFO [main] o.s.b.a.ApplicationAvailabilityBean [ApplicationAvailabilityBean.java:75] Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-07 17:04:48,180 INFO [main] c.l.c.LoggerTest [LoggerTest.java:18] info log

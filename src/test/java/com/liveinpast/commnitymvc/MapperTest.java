@@ -1,6 +1,8 @@
 package com.liveinpast.commnitymvc;
 
+import com.liveinpast.commnitymvc.dao.DiscussPostMapper;
 import com.liveinpast.commnitymvc.dao.UserMapper;
+import com.liveinpast.commnitymvc.entity.DiscussPost;
 import com.liveinpast.commnitymvc.entity.User;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.annotation.MapperScan;
@@ -9,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
 import java.util.Date;
+import java.util.List;
 
 @SpringBootTest
 @ContextConfiguration(classes = CommnityMvcApplication.class)
@@ -17,6 +20,8 @@ public class MapperTest {
 
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private DiscussPostMapper discussPostMapper;
 
     @Test
     public void testSelectById() {
@@ -56,5 +61,17 @@ public class MapperTest {
         rows = userMapper.updatePassword(150, "hello");
         System.out.println(rows);
     }
+
+    @Test
+    public void testdiscussPost() {
+        List<DiscussPost> list = discussPostMapper.selectDiscussPosts(149,0,10);
+        for (DiscussPost post : list) {
+            System.out.println(post);
+        }
+
+        int rows = discussPostMapper.selectDiscussPostRows(149);
+        System.out.println(rows);
+    }
+
 
 }
